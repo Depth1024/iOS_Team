@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Copy
+//  手势截取部分图片
 //
-//  Created by zlr on 2019/4/6.
+//  Created by zlr on 2019/4/8.
 //  Copyright © 2019 Zhou Langrui. All rights reserved.
 //
 
@@ -58,7 +58,7 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"Copy"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"________"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.
