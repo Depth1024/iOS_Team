@@ -1,16 +1,14 @@
 //
 //  ViewController.m
-//  手势截取部分图片
+//  Copy
 //
-//  Created by zlr on 2019/4/8.
-//  Copyright © 2019 Zhou Langrui. All rights reserved.
+//  Created by 周朗睿 on 2019/4/10.
+//  Copyright © 2019 周朗睿. All rights reserved.
 //
 
 #import "ViewController.h"
 
 @interface ViewController ()
-
-// 从mainstoryboard拖过来的imageView，用于存放待裁剪图片
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 // 将图片的剪切区域作为成员属性clipView
 @property (nonatomic, weak) UIView *clipView;
@@ -93,9 +91,9 @@
         self.clipView = nil;
         //将图片显示到imageView上
         self.imageView.image = image;
-//        //通过alertView提示用户，是否将图片保存至相册
-//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"保存图片" message:@"是否将图片保存至相册？" delegate:self cancelButtonTitle:@"否" otherButtonTitles:@"是", nil];
-//        [alertView show];
+        //        //通过alertView提示用户，是否将图片保存至相册
+        //        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"保存图片" message:@"是否将图片保存至相册？" delegate:self cancelButtonTitle:@"否" otherButtonTitles:@"是", nil];
+        //        [alertView show];
     }
 }
 

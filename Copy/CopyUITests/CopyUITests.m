@@ -1,18 +1,18 @@
 //
-//  ________UITests.m
-//  手势截取部分图片UITests
+//  CopyUITests.m
+//  CopyUITests
 //
-//  Created by zlr on 2019/4/8.
-//  Copyright © 2019 Zhou Langrui. All rights reserved.
+//  Created by 周朗睿 on 2019/4/10.
+//  Copyright © 2019 周朗睿. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface ________UITests : XCTestCase
+@interface CopyUITests : XCTestCase
 
 @end
 
-@implementation ________UITests
+@implementation CopyUITests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.

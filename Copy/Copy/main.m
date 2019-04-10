@@ -1,9 +1,9 @@
 //
 //  main.m
-//  手势截取部分图片
+//  Copy
 //
-//  Created by zlr on 2019/4/8.
-//  Copyright © 2019 Zhou Langrui. All rights reserved.
+//  Created by 周朗睿 on 2019/4/10.
+//  Copyright © 2019 周朗睿. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
