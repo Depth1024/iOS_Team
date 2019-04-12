@@ -15,6 +15,10 @@
 		46F06123225DEF1300C22880 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F06122225DEF1300C22880 /* main.m */; };
 		46F0612D225DEF1300C22880 /* CopyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F0612C225DEF1300C22880 /* CopyTests.m */; };
 		46F06138225DEF1300C22880 /* CopyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F06137225DEF1300C22880 /* CopyUITests.m */; };
+		46F06147225DF00600C22880 /* AipBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F06145225DF00600C22880 /* AipBase.framework */; };
+		46F06148225DF00600C22880 /* AipBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46F06145225DF00600C22880 /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46F06149225DF00600C22880 /* AipOcrSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F06146225DF00600C22880 /* AipOcrSdk.framework */; };
+		46F0614A225DF00600C22880 /* AipOcrSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46F06146225DF00600C22880 /* AipOcrSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		46F0614B225DF00600C22880 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				46F06148225DF00600C22880 /* AipBase.framework in Embed Frameworks */,
+				46F0614A225DF00600C22880 /* AipOcrSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		46F06110225DEF1200C22880 /* Copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Copy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F06113225DEF1200C22880 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +70,8 @@
 		46F06133225DEF1300C22880 /* CopyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F06137225DEF1300C22880 /* CopyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyUITests.m; sourceTree = "<group>"; };
 		46F06139225DEF1300C22880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F06145225DF00600C22880 /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipBase.framework; sourceTree = "<group>"; };
+		46F06146225DF00600C22880 /* AipOcrSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipOcrSdk.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F06147225DF00600C22880 /* AipBase.framework in Frameworks */,
+				46F06149225DF00600C22880 /* AipOcrSdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +104,8 @@
 		46F06107225DEF1200C22880 = {
 			isa = PBXGroup;
 			children = (
+				46F06145225DF00600C22880 /* AipBase.framework */,
+				46F06146225DF00600C22880 /* AipOcrSdk.framework */,
 				46F06112225DEF1200C22880 /* Copy */,
 				46F0612B225DEF1300C22880 /* CopyTests */,
 				46F06136225DEF1300C22880 /* CopyUITests */,
@@ -142,6 +167,7 @@
 				46F0610C225DEF1200C22880 /* Sources */,
 				46F0610D225DEF1200C22880 /* Frameworks */,
 				46F0610E225DEF1200C22880 /* Resources */,
+				46F0614B225DF00600C22880 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -437,6 +463,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Copy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +484,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Copy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
