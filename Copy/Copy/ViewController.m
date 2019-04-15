@@ -28,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+   
     /**创建手势**/
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     /**
@@ -37,54 +38,7 @@
     [self.view addGestureRecognizer:pan];
 }
 
-//- (void)configCallback {
-//    __weak typeof(self) weakSelf = self;
-//
-//    // 这是默认的识别成功的回调
-//    _successHandler = ^(id result){
-//        NSLog(@"%@", result);
-//        NSString *title = @"识别结果";
-//        NSMutableString *message = [NSMutableString string];
-//
-//        if(result[@"words_result"]){
-//            if([result[@"words_result"] isKindOfClass:[NSDictionary class]]){
-//                [result[@"words_result"] enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-//                    if([obj isKindOfClass:[NSDictionary class]] && [obj objectForKey:@"words"]){
-//                        [message appendFormat:@"%@: %@\n", key, obj[@"words"]];
-//                    }else{
-//                        [message appendFormat:@"%@: %@\n", key, obj];
-//                    }
-//
-//                }];
-//            }else if([result[@"words_result"] isKindOfClass:[NSArray class]]){
-//                for(NSDictionary *obj in result[@"words_result"]){
-//                    if([obj isKindOfClass:[NSDictionary class]] && [obj objectForKey:@"words"]){
-//                        [message appendFormat:@"%@\n", obj[@"words"]];
-//                    }else{
-//                        [message appendFormat:@"%@\n", obj];
-//                    }
-//
-//                }
-//            }
-//
-//        }else{
-//            [message appendFormat:@"%@", result];
-//        }
-//
-//        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-//            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:weakSelf cancelButtonTitle:@"确定" otherButtonTitles:nil];
-//            [alertView show];
-//        }];
-//    };
-//
-//    _failHandler = ^(NSError *error){
-//        NSLog(@"%@", error);
-//        NSString *msg = [NSString stringWithFormat:@"%li:%@", (long)[error code], [error localizedDescription]];
-//        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-//            [[[UIAlertView alloc] initWithTitle:@"识别失败" message:msg delegate:weakSelf cancelButtonTitle:@"确定" otherButtonTitles:nil] show];
-//        }];
-//    };
-//}
+
 
 // 懒加载，建立clipView
 - (UIView *)clipView
@@ -101,6 +55,55 @@
         [self.view addSubview:_clipView];
     }
     return _clipView;
+}
+
+- (void)configCallback {
+    __weak typeof(self) weakSelf = self;
+    
+    // 这是默认的识别成功的回调
+    _successHandler = ^(id result){
+        NSLog(@"%@", result);
+        NSString *title = @"识别结果";
+        NSMutableString *message = [NSMutableString string];
+        
+        if(result[@"words_result"]){
+            if([result[@"words_result"] isKindOfClass:[NSDictionary class]]){
+                [result[@"words_result"] enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+                    if([obj isKindOfClass:[NSDictionary class]] && [obj objectForKey:@"words"]){
+                        [message appendFormat:@"%@: %@\n", key, obj[@"words"]];
+                    }else{
+                        [message appendFormat:@"%@: %@\n", key, obj];
+                    }
+                    
+                }];
+            }else if([result[@"words_result"] isKindOfClass:[NSArray class]]){
+                for(NSDictionary *obj in result[@"words_result"]){
+                    if([obj isKindOfClass:[NSDictionary class]] && [obj objectForKey:@"words"]){
+                        [message appendFormat:@"%@\n", obj[@"words"]];
+                    }else{
+                        [message appendFormat:@"%@\n", obj];
+                    }
+                    
+                }
+            }
+            
+        }else{
+            [message appendFormat:@"%@", result];
+        }
+        
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:weakSelf cancelButtonTitle:@"确定" otherButtonTitles:nil];
+            [alertView show];
+        }];
+    };
+    
+    _failHandler = ^(NSError *error){
+        NSLog(@"%@", error);
+        NSString *msg = [NSString stringWithFormat:@"%li:%@", (long)[error code], [error localizedDescription]];
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            [[[UIAlertView alloc] initWithTitle:@"识别失败" message:msg delegate:weakSelf cancelButtonTitle:@"确定" otherButtonTitles:nil] show];
+        }];
+    };
 }
 
 - (void)pan:(UIPanGestureRecognizer *)pan
@@ -149,15 +152,58 @@
         //        //通过alertView提示用户，是否将图片保存至相册
         //        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"保存图片" message:@"是否将图片保存至相册？" delegate:self cancelButtonTitle:@"否" otherButtonTitles:@"是", nil];
         //        [alertView show];
-//        UIViewController * vc = [AipGeneralVC ViewControllerWithHandler:^(UIImage *image) {
-//            NSDictionary *options = @{@"language_type": @"CHN_ENG", @"detect_direction": @"true"};
-//            [[AipOcrService shardService] detectTextBasicFromImage:self.imageView.image
-//                                                       withOptions:options
-//                                                    successHandler:_successHandler
-//                                                       failHandler:_failHandler];
-//
-//        }];
-//        [self presentViewController:vc animated:YES completion:nil];
+        
+        
+        // baidu OCR API身份验证
+         [[AipOcrService shardService]authWithAK:@"Ey94Ux0Ahhb9ONoDT6KCBqv5"andSK:@"0Y7c6Ec4FoaXTZCgmTQBa7GQl63pcHAH"];
+        
+        __weak typeof(self) weakSelf = self;
+        
+        NSDictionary *options = @{@"language_type": @"CHN_ENG", @"detect_direction": @"true"};
+        [[AipOcrService shardService] detectTextFromImage:image withOptions:options successHandler:^(id result) {
+            // 成功识别的后续逻辑
+            NSLog(@"%@", result);
+            NSString *title = @"识别结果";
+            NSMutableString *message = [NSMutableString string];
+            
+            if(result[@"words_result"]){
+                if([result[@"words_result"] isKindOfClass:[NSDictionary class]]){
+                    [result[@"words_result"] enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+                        if([obj isKindOfClass:[NSDictionary class]] && [obj objectForKey:@"words"]){
+                            [message appendFormat:@"%@: %@\n", key, obj[@"words"]];
+                        }else{
+                            [message appendFormat:@"%@: %@\n", key, obj];
+                        }
+                        
+                    }];
+                }else if([result[@"words_result"] isKindOfClass:[NSArray class]]){
+                    for(NSDictionary *obj in result[@"words_result"]){
+                        if([obj isKindOfClass:[NSDictionary class]] && [obj objectForKey:@"words"]){
+                            [message appendFormat:@"%@\n", obj[@"words"]];
+                        }else{
+                            [message appendFormat:@"%@\n", obj];
+                        }
+                        
+                    }
+                }
+                
+            }else{
+                [message appendFormat:@"%@", result];
+            }
+            
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:weakSelf cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                [alertView show];
+            }];
+        } failHandler:^(NSError *error) {
+            // 失败的后续逻辑
+            NSLog(@"%@", error);
+            NSString *msg = [NSString stringWithFormat:@"%li:%@", (long)[error code], [error localizedDescription]];
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                [[[UIAlertView alloc] initWithTitle:@"识别失败" message:msg delegate:weakSelf cancelButtonTitle:@"确定" otherButtonTitles:nil] show];
+            }];
+        }];
+        
 
     }
 }
