@@ -25,6 +25,8 @@
     void (^_failHandler)(NSError *);
 }
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -153,7 +155,7 @@
         //        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"保存图片" message:@"是否将图片保存至相册？" delegate:self cancelButtonTitle:@"否" otherButtonTitles:@"是", nil];
         //        [alertView show];
         
-        
+
         // baidu OCR API身份验证
          [[AipOcrService shardService]authWithAK:@"Ey94Ux0Ahhb9ONoDT6KCBqv5"andSK:@"0Y7c6Ec4FoaXTZCgmTQBa7GQl63pcHAH"];
         
@@ -161,10 +163,13 @@
         
         NSDictionary *options = @{@"language_type": @"CHN_ENG", @"detect_direction": @"true"};
         [[AipOcrService shardService] detectTextFromImage:image withOptions:options successHandler:^(id result) {
+            
             // 成功识别的后续逻辑
             NSLog(@"%@", result);
             NSString *title = @"识别结果";
             NSMutableString *message = [NSMutableString string];
+            
+            UILabel *copyLabel = nil;
             
             if(result[@"words_result"]){
                 if([result[@"words_result"] isKindOfClass:[NSDictionary class]]){
@@ -192,9 +197,24 @@
             }
             
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:weakSelf cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"确认" otherButtonTitles:@"Copy", nil];
+//                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                // 全局变量flag == 1 ，识别成功并且点击了“确定“按钮
+                
                 [alertView show];
+//                if(flag == 1){
+//                    copyLabel.text = message;
+//                    UIPasteboard *appPasteBoard =  [UIPasteboard generalPasteboard];
+//                    appPasteBoard.persistent = YES;
+//                    NSString *pasteStr =copyLabel.text;
+//                    [appPasteBoard setString:pasteStr];
+//                    printf("copy success!");
+//                    //                    UIAlertView *alertview1 = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:NSLocalizedString(@"完成复制",nil),nil] message:nil delegate:nil cancelButtonTitle:NSLocalizedString(@"OK",nil) otherButtonTitles:nil];
+//                    //                    [alertview1 show];
+//
+//                }
             }];
+//            NSLog(@"%@",message);
         } failHandler:^(NSError *error) {
             // 失败的后续逻辑
             NSLog(@"%@", error);
@@ -208,16 +228,18 @@
     }
 }
 
-//- (void)alertView:(nonnull UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-//{
-//    //若点击了“是”，则保存图片
-//    if (buttonIndex == 1)
-//    {
-//        UIImageWriteToSavedPhotosAlbum(self.imageView.image, nil, nil, nil);
-//        /**
-//         * 该方法可以设置保存完毕调用的方法，此处未进行设置
-//         */
-//    }
-//}
+- (void)alertView:(nonnull UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    //若点击了“是”，则将文字保存到剪贴板
+    if (buttonIndex == 1)
+    {
+        NSString *str = alertView.message;
+//        NSLog(@"%@",str);
+        
+        UIPasteboard *appPasteBoard =  [UIPasteboard generalPasteboard];
+        appPasteBoard.persistent = YES;
+        [appPasteBoard setString:str];
+    }
+}
 
 @end
