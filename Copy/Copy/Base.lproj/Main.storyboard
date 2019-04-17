@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image View" translatesAutoresizingMaskIntoConstraints="NO" id="Sq5-ic-9Mt">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageView" translatesAutoresizingMaskIntoConstraints="NO" id="Sq5-ic-9Mt">
                                 <rect key="frame" x="-8" y="0.0" width="422" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -36,6 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image View" width="357" height="581"/>
+        <image name="ImageView" width="674" height="942"/>
     </resources>
 </document>

@@ -123,9 +123,10 @@
         endPoint = [pan locationInView:self.view];
         //计算矩形区域的宽高
         CGFloat w = endPoint.x - self.startPoint.x;
-        CGFloat h = endPoint.y - self.startPoint.y;
+//        CGFloat h = endPoint.y - self.startPoint.y;
+        CGFloat h = 40;
         //计算矩形区域的frame
-        CGRect clipRect = CGRectMake(self.startPoint.x, self.startPoint.y, w, h);
+        CGRect clipRect = CGRectMake(self.startPoint.x, self.startPoint.y-(h/2), w, h);
         //设置剪切区域的frame
         self.clipView.frame = clipRect;
     }
@@ -197,7 +198,7 @@
             }
             
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"确认" otherButtonTitles:@"Copy", nil];
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"重新选择" otherButtonTitles:@"Copy", nil];
 //                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
                 // 全局变量flag == 1 ，识别成功并且点击了“确定“按钮
                 
