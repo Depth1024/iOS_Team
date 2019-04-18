@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46E36B4B22683429009FB17C /* IdcardQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E36B4A22683429009FB17C /* IdcardQuality.framework */; };
+		46E36B4C22683429009FB17C /* IdcardQuality.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46E36B4A22683429009FB17C /* IdcardQuality.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		46F06115225DEF1200C22880 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F06114225DEF1200C22880 /* AppDelegate.m */; };
 		46F06118225DEF1200C22880 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F06117225DEF1200C22880 /* ViewController.m */; };
 		46F0611B225DEF1200C22880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F06119225DEF1200C22880 /* Main.storyboard */; };
@@ -47,6 +49,7 @@
 			files = (
 				46F06148225DF00600C22880 /* AipBase.framework in Embed Frameworks */,
 				46F0614A225DF00600C22880 /* AipOcrSdk.framework in Embed Frameworks */,
+				46E36B4C22683429009FB17C /* IdcardQuality.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		46E36B4A22683429009FB17C /* IdcardQuality.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IdcardQuality.framework; sourceTree = "<group>"; };
 		46F06110225DEF1200C22880 /* Copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Copy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F06113225DEF1200C22880 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46F06114225DEF1200C22880 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 			files = (
 				46F06147225DF00600C22880 /* AipBase.framework in Frameworks */,
 				46F06149225DF00600C22880 /* AipOcrSdk.framework in Frameworks */,
+				46E36B4B22683429009FB17C /* IdcardQuality.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +109,7 @@
 		46F06107225DEF1200C22880 = {
 			isa = PBXGroup;
 			children = (
+				46E36B4A22683429009FB17C /* IdcardQuality.framework */,
 				46F06145225DF00600C22880 /* AipBase.framework */,
 				46F06146225DF00600C22880 /* AipOcrSdk.framework */,
 				46F06112225DEF1200C22880 /* Copy */,
