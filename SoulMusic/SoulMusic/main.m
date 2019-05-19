@@ -1,9 +1,9 @@
 //
 //  main.m
-//  初学
+//  SoulMusic
 //
-//  Created by zlr on 2019/4/16.
-//  Copyright © 2019 Wang Tianlin. All rights reserved.
+//  Created by 周朗睿 on 2019/5/19.
+//  Copyright © 2019 周朗睿. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

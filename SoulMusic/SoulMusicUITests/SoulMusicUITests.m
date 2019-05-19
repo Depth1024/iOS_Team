@@ -1,18 +1,18 @@
 //
-//  __UITests.m
-//  初学UITests
+//  SoulMusicUITests.m
+//  SoulMusicUITests
 //
-//  Created by zlr on 2019/4/16.
-//  Copyright © 2019 Wang Tianlin. All rights reserved.
+//  Created by 周朗睿 on 2019/5/19.
+//  Copyright © 2019 周朗睿. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface __UITests : XCTestCase
+@interface SoulMusicUITests : XCTestCase
 
 @end
 
-@implementation __UITests
+@implementation SoulMusicUITests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.

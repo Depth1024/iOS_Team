@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46D6C8C7229112C200855EFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D6C8C6229112C200855EFF /* AppDelegate.m */; };
+		46D6C8CA229112C200855EFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D6C8C9229112C200855EFF /* ViewController.m */; };
+		46D6C8CD229112C200855EFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D6C8CB229112C200855EFF /* Main.storyboard */; };
+		46D6C8CF229112C400855EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D6C8CE229112C400855EFF /* Assets.xcassets */; };
+		46D6C8D2229112C400855EFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D6C8D0229112C400855EFF /* LaunchScreen.storyboard */; };
+		46D6C8D5229112C400855EFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D6C8D4229112C400855EFF /* main.m */; };
+		46D6C8DF229112C400855EFF /* SoulMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D6C8DE229112C400855EFF /* SoulMusicTests.m */; };
+		46D6C8EA229112C400855EFF /* SoulMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D6C8E9229112C400855EFF /* SoulMusicUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46D6C8DB229112C400855EFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46D6C8BA229112C200855EFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46D6C8C1229112C200855EFF;
+			remoteInfo = SoulMusic;
+		};
+		46D6C8E6229112C400855EFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46D6C8BA229112C200855EFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46D6C8C1229112C200855EFF;
+			remoteInfo = SoulMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46D6C8C2229112C200855EFF /* SoulMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoulMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D6C8C5229112C200855EFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46D6C8C6229112C200855EFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46D6C8C8229112C200855EFF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		46D6C8C9229112C200855EFF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		46D6C8CC229112C200855EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46D6C8CE229112C400855EFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46D6C8D1229112C400855EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46D6C8D3229112C400855EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D6C8D4229112C400855EFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46D6C8DA229112C400855EFF /* SoulMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoulMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D6C8DE229112C400855EFF /* SoulMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoulMusicTests.m; sourceTree = "<group>"; };
+		46D6C8E0229112C400855EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D6C8E5229112C400855EFF /* SoulMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoulMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D6C8E9229112C400855EFF /* SoulMusicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoulMusicUITests.m; sourceTree = "<group>"; };
+		46D6C8EB229112C400855EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46D6C8BF229112C200855EFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D6C8D7229112C400855EFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D6C8E2229112C400855EFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46D6C8B9229112C200855EFF = {
+			isa = PBXGroup;
+			children = (
+				46D6C8C4229112C200855EFF /* SoulMusic */,
+				46D6C8DD229112C400855EFF /* SoulMusicTests */,
+				46D6C8E8229112C400855EFF /* SoulMusicUITests */,
+				46D6C8C3229112C200855EFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46D6C8C3229112C200855EFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46D6C8C2229112C200855EFF /* SoulMusic.app */,
+				46D6C8DA229112C400855EFF /* SoulMusicTests.xctest */,
+				46D6C8E5229112C400855EFF /* SoulMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46D6C8C4229112C200855EFF /* SoulMusic */ = {
+			isa = PBXGroup;
+			children = (
+				46D6C8C5229112C200855EFF /* AppDelegate.h */,
+				46D6C8C6229112C200855EFF /* AppDelegate.m */,
+				46D6C8C8229112C200855EFF /* ViewController.h */,
+				46D6C8C9229112C200855EFF /* ViewController.m */,
+				46D6C8CB229112C200855EFF /* Main.storyboard */,
+				46D6C8CE229112C400855EFF /* Assets.xcassets */,
+				46D6C8D0229112C400855EFF /* LaunchScreen.storyboard */,
+				46D6C8D3229112C400855EFF /* Info.plist */,
+				46D6C8D4229112C400855EFF /* main.m */,
+			);
+			path = SoulMusic;
+			sourceTree = "<group>";
+		};
+		46D6C8DD229112C400855EFF /* SoulMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				46D6C8DE229112C400855EFF /* SoulMusicTests.m */,
+				46D6C8E0229112C400855EFF /* Info.plist */,
+			);
+			path = SoulMusicTests;
+			sourceTree = "<group>";
+		};
+		46D6C8E8229112C400855EFF /* SoulMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46D6C8E9229112C400855EFF /* SoulMusicUITests.m */,
+				46D6C8EB229112C400855EFF /* Info.plist */,
+			);
+			path = SoulMusicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46D6C8C1229112C200855EFF /* SoulMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D6C8EE229112C400855EFF /* Build configuration list for PBXNativeTarget "SoulMusic" */;
+			buildPhases = (
+				46D6C8BE229112C200855EFF /* Sources */,
+				46D6C8BF229112C200855EFF /* Frameworks */,
+				46D6C8C0229112C200855EFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoulMusic;
+			productName = SoulMusic;
+			productReference = 46D6C8C2229112C200855EFF /* SoulMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46D6C8D9229112C400855EFF /* SoulMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D6C8F1229112C400855EFF /* Build configuration list for PBXNativeTarget "SoulMusicTests" */;
+			buildPhases = (
+				46D6C8D6229112C400855EFF /* Sources */,
+				46D6C8D7229112C400855EFF /* Frameworks */,
+				46D6C8D8229112C400855EFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46D6C8DC229112C400855EFF /* PBXTargetDependency */,
+			);
+			name = SoulMusicTests;
+			productName = SoulMusicTests;
+			productReference = 46D6C8DA229112C400855EFF /* SoulMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46D6C8E4229112C400855EFF /* SoulMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D6C8F4229112C400855EFF /* Build configuration list for PBXNativeTarget "SoulMusicUITests" */;
+			buildPhases = (
+				46D6C8E1229112C400855EFF /* Sources */,
+				46D6C8E2229112C400855EFF /* Frameworks */,
+				46D6C8E3229112C400855EFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46D6C8E7229112C400855EFF /* PBXTargetDependency */,
+			);
+			name = SoulMusicUITests;
+			productName = SoulMusicUITests;
+			productReference = 46D6C8E5229112C400855EFF /* SoulMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46D6C8BA229112C200855EFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "周朗睿";
+				TargetAttributes = {
+					46D6C8C1229112C200855EFF = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					46D6C8D9229112C400855EFF = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 46D6C8C1229112C200855EFF;
+					};
+					46D6C8E4229112C400855EFF = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 46D6C8C1229112C200855EFF;
+					};
+				};
+			};
+			buildConfigurationList = 46D6C8BD229112C200855EFF /* Build configuration list for PBXProject "SoulMusic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46D6C8B9229112C200855EFF;
+			productRefGroup = 46D6C8C3229112C200855EFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46D6C8C1229112C200855EFF /* SoulMusic */,
+				46D6C8D9229112C400855EFF /* SoulMusicTests */,
+				46D6C8E4229112C400855EFF /* SoulMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46D6C8C0229112C200855EFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D6C8D2229112C400855EFF /* LaunchScreen.storyboard in Resources */,
+				46D6C8CF229112C400855EFF /* Assets.xcassets in Resources */,
+				46D6C8CD229112C200855EFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D6C8D8229112C400855EFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D6C8E3229112C400855EFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46D6C8BE229112C200855EFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D6C8CA229112C200855EFF /* ViewController.m in Sources */,
+				46D6C8D5229112C400855EFF /* main.m in Sources */,
+				46D6C8C7229112C200855EFF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D6C8D6229112C400855EFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D6C8DF229112C400855EFF /* SoulMusicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D6C8E1229112C400855EFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D6C8EA229112C400855EFF /* SoulMusicUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46D6C8DC229112C400855EFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46D6C8C1229112C200855EFF /* SoulMusic */;
+			targetProxy = 46D6C8DB229112C400855EFF /* PBXContainerItemProxy */;
+		};
+		46D6C8E7229112C400855EFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46D6C8C1229112C200855EFF /* SoulMusic */;
+			targetProxy = 46D6C8E6229112C400855EFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46D6C8CB229112C200855EFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46D6C8CC229112C200855EFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46D6C8D0229112C400855EFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46D6C8D1229112C400855EFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46D6C8EC229112C400855EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		46D6C8ED229112C400855EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46D6C8EF229112C400855EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				INFOPLIST_FILE = SoulMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlr.SoulMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46D6C8F0229112C400855EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				INFOPLIST_FILE = SoulMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlr.SoulMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46D6C8F2229112C400855EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				INFOPLIST_FILE = SoulMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlr.SoulMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoulMusic.app/SoulMusic";
+			};
+			name = Debug;
+		};
+		46D6C8F3229112C400855EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				INFOPLIST_FILE = SoulMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlr.SoulMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoulMusic.app/SoulMusic";
+			};
+			name = Release;
+		};
+		46D6C8F5229112C400855EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				INFOPLIST_FILE = SoulMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlr.SoulMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoulMusic;
+			};
+			name = Debug;
+		};
+		46D6C8F6229112C400855EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				INFOPLIST_FILE = SoulMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlr.SoulMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoulMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46D6C8BD229112C200855EFF /* Build configuration list for PBXProject "SoulMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D6C8EC229112C400855EFF /* Debug */,
+				46D6C8ED229112C400855EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D6C8EE229112C400855EFF /* Build configuration list for PBXNativeTarget "SoulMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D6C8EF229112C400855EFF /* Debug */,
+				46D6C8F0229112C400855EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D6C8F1229112C400855EFF /* Build configuration list for PBXNativeTarget "SoulMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D6C8F2229112C400855EFF /* Debug */,
+				46D6C8F3229112C400855EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D6C8F4229112C400855EFF /* Build configuration list for PBXNativeTarget "SoulMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D6C8F5229112C400855EFF /* Debug */,
+				46D6C8F6229112C400855EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46D6C8BA229112C200855EFF /* Project object */;
+}
