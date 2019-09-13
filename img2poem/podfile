@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+
+target 'img2poem' do
+pod 'AFNetworking'
+end

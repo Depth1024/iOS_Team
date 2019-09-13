@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46BB2C312324A24C00B3160C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB2C302324A24C00B3160C /* AppDelegate.m */; };
+		46BB2C342324A24C00B3160C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB2C332324A24C00B3160C /* ViewController.m */; };
+		46BB2C372324A24C00B3160C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BB2C352324A24C00B3160C /* Main.storyboard */; };
+		46BB2C392324A24D00B3160C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BB2C382324A24D00B3160C /* Assets.xcassets */; };
+		46BB2C3C2324A24D00B3160C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BB2C3A2324A24D00B3160C /* LaunchScreen.storyboard */; };
+		46BB2C3F2324A24D00B3160C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB2C3E2324A24D00B3160C /* main.m */; };
+		46BB2C492324A24D00B3160C /* img2poemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB2C482324A24D00B3160C /* img2poemTests.m */; };
+		46BB2C542324A24D00B3160C /* img2poemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB2C532324A24D00B3160C /* img2poemUITests.m */; };
+		4FF82C842200300C4AEDD1E1 /* libPods-img2poem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5D86D833B76B104833A72A /* libPods-img2poem.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46BB2C452324A24D00B3160C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46BB2C242324A24C00B3160C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46BB2C2B2324A24C00B3160C;
+			remoteInfo = img2poem;
+		};
+		46BB2C502324A24D00B3160C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46BB2C242324A24C00B3160C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46BB2C2B2324A24C00B3160C;
+			remoteInfo = img2poem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46BB2C2C2324A24C00B3160C /* img2poem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = img2poem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46BB2C2F2324A24C00B3160C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46BB2C302324A24C00B3160C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46BB2C322324A24C00B3160C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		46BB2C332324A24C00B3160C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		46BB2C362324A24C00B3160C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46BB2C382324A24D00B3160C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46BB2C3B2324A24D00B3160C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46BB2C3D2324A24D00B3160C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46BB2C3E2324A24D00B3160C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46BB2C442324A24D00B3160C /* img2poemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = img2poemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46BB2C482324A24D00B3160C /* img2poemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = img2poemTests.m; sourceTree = "<group>"; };
+		46BB2C4A2324A24D00B3160C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46BB2C4F2324A24D00B3160C /* img2poemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = img2poemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46BB2C532324A24D00B3160C /* img2poemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = img2poemUITests.m; sourceTree = "<group>"; };
+		46BB2C552324A24D00B3160C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D5D86D833B76B104833A72A /* libPods-img2poem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-img2poem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		819BEF452C90D71E02A5C8D9 /* Pods-img2poem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-img2poem.debug.xcconfig"; path = "Target Support Files/Pods-img2poem/Pods-img2poem.debug.xcconfig"; sourceTree = "<group>"; };
+		FD85910C5FFF2AE6EB007B56 /* Pods-img2poem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-img2poem.release.xcconfig"; path = "Target Support Files/Pods-img2poem/Pods-img2poem.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46BB2C292324A24C00B3160C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF82C842200300C4AEDD1E1 /* libPods-img2poem.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46BB2C412324A24D00B3160C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46BB2C4C2324A24D00B3160C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		216CB85066CD78F69EC6921D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				819BEF452C90D71E02A5C8D9 /* Pods-img2poem.debug.xcconfig */,
+				FD85910C5FFF2AE6EB007B56 /* Pods-img2poem.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		46BB2C232324A24C00B3160C = {
+			isa = PBXGroup;
+			children = (
+				46BB2C2E2324A24C00B3160C /* img2poem */,
+				46BB2C472324A24D00B3160C /* img2poemTests */,
+				46BB2C522324A24D00B3160C /* img2poemUITests */,
+				46BB2C2D2324A24C00B3160C /* Products */,
+				216CB85066CD78F69EC6921D /* Pods */,
+				AE7162B2148EED40E54459DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46BB2C2D2324A24C00B3160C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46BB2C2C2324A24C00B3160C /* img2poem.app */,
+				46BB2C442324A24D00B3160C /* img2poemTests.xctest */,
+				46BB2C4F2324A24D00B3160C /* img2poemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46BB2C2E2324A24C00B3160C /* img2poem */ = {
+			isa = PBXGroup;
+			children = (
+				46BB2C2F2324A24C00B3160C /* AppDelegate.h */,
+				46BB2C302324A24C00B3160C /* AppDelegate.m */,
+				46BB2C322324A24C00B3160C /* ViewController.h */,
+				46BB2C332324A24C00B3160C /* ViewController.m */,
+				46BB2C352324A24C00B3160C /* Main.storyboard */,
+				46BB2C382324A24D00B3160C /* Assets.xcassets */,
+				46BB2C3A2324A24D00B3160C /* LaunchScreen.storyboard */,
+				46BB2C3D2324A24D00B3160C /* Info.plist */,
+				46BB2C3E2324A24D00B3160C /* main.m */,
+			);
+			path = img2poem;
+			sourceTree = "<group>";
+		};
+		46BB2C472324A24D00B3160C /* img2poemTests */ = {
+			isa = PBXGroup;
+			children = (
+				46BB2C482324A24D00B3160C /* img2poemTests.m */,
+				46BB2C4A2324A24D00B3160C /* Info.plist */,
+			);
+			path = img2poemTests;
+			sourceTree = "<group>";
+		};
+		46BB2C522324A24D00B3160C /* img2poemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46BB2C532324A24D00B3160C /* img2poemUITests.m */,
+				46BB2C552324A24D00B3160C /* Info.plist */,
+			);
+			path = img2poemUITests;
+			sourceTree = "<group>";
+		};
+		AE7162B2148EED40E54459DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D5D86D833B76B104833A72A /* libPods-img2poem.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46BB2C2B2324A24C00B3160C /* img2poem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46BB2C582324A24D00B3160C /* Build configuration list for PBXNativeTarget "img2poem" */;
+			buildPhases = (
+				F3D79816A43D516DB3D3CD10 /* [CP] Check Pods Manifest.lock */,
+				46BB2C282324A24C00B3160C /* Sources */,
+				46BB2C292324A24C00B3160C /* Frameworks */,
+				46BB2C2A2324A24C00B3160C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = img2poem;
+			productName = img2poem;
+			productReference = 46BB2C2C2324A24C00B3160C /* img2poem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46BB2C432324A24D00B3160C /* img2poemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46BB2C5B2324A24D00B3160C /* Build configuration list for PBXNativeTarget "img2poemTests" */;
+			buildPhases = (
+				46BB2C402324A24D00B3160C /* Sources */,
+				46BB2C412324A24D00B3160C /* Frameworks */,
+				46BB2C422324A24D00B3160C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46BB2C462324A24D00B3160C /* PBXTargetDependency */,
+			);
+			name = img2poemTests;
+			productName = img2poemTests;
+			productReference = 46BB2C442324A24D00B3160C /* img2poemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46BB2C4E2324A24D00B3160C /* img2poemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46BB2C5E2324A24D00B3160C /* Build configuration list for PBXNativeTarget "img2poemUITests" */;
+			buildPhases = (
+				46BB2C4B2324A24D00B3160C /* Sources */,
+				46BB2C4C2324A24D00B3160C /* Frameworks */,
+				46BB2C4D2324A24D00B3160C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46BB2C512324A24D00B3160C /* PBXTargetDependency */,
+			);
+			name = img2poemUITests;
+			productName = img2poemUITests;
+			productReference = 46BB2C4F2324A24D00B3160C /* img2poemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46BB2C242324A24C00B3160C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "周朗睿";
+				TargetAttributes = {
+					46BB2C2B2324A24C00B3160C = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					46BB2C432324A24D00B3160C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 46BB2C2B2324A24C00B3160C;
+					};
+					46BB2C4E2324A24D00B3160C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 46BB2C2B2324A24C00B3160C;
+					};
+				};
+			};
+			buildConfigurationList = 46BB2C272324A24C00B3160C /* Build configuration list for PBXProject "img2poem" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46BB2C232324A24C00B3160C;
+			productRefGroup = 46BB2C2D2324A24C00B3160C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46BB2C2B2324A24C00B3160C /* img2poem */,
+				46BB2C432324A24D00B3160C /* img2poemTests */,
+				46BB2C4E2324A24D00B3160C /* img2poemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46BB2C2A2324A24C00B3160C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46BB2C3C2324A24D00B3160C /* LaunchScreen.storyboard in Resources */,
+				46BB2C392324A24D00B3160C /* Assets.xcassets in Resources */,
+				46BB2C372324A24C00B3160C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46BB2C422324A24D00B3160C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46BB2C4D2324A24D00B3160C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3D79816A43D516DB3D3CD10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-img2poem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46BB2C282324A24C00B3160C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46BB2C342324A24C00B3160C /* ViewController.m in Sources */,
+				46BB2C3F2324A24D00B3160C /* main.m in Sources */,
+				46BB2C312324A24C00B3160C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46BB2C402324A24D00B3160C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46BB2C492324A24D00B3160C /* img2poemTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46BB2C4B2324A24D00B3160C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46BB2C542324A24D00B3160C /* img2poemUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46BB2C462324A24D00B3160C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46BB2C2B2324A24C00B3160C /* img2poem */;
+			targetProxy = 46BB2C452324A24D00B3160C /* PBXContainerItemProxy */;
+		};
+		46BB2C512324A24D00B3160C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46BB2C2B2324A24C00B3160C /* img2poem */;
+			targetProxy = 46BB2C502324A24D00B3160C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46BB2C352324A24C00B3160C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46BB2C362324A24C00B3160C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46BB2C3A2324A24D00B3160C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46BB2C3B2324A24D00B3160C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46BB2C562324A24D00B3160C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		46BB2C572324A24D00B3160C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46BB2C592324A24D00B3160C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 819BEF452C90D71E02A5C8D9 /* Pods-img2poem.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				INFOPLIST_FILE = img2poem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlr.img2poem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46BB2C5A2324A24D00B3160C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD85910C5FFF2AE6EB007B56 /* Pods-img2poem.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				INFOPLIST_FILE = img2poem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlr.img2poem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46BB2C5C2324A24D00B3160C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				INFOPLIST_FILE = img2poemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlr.img2poemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/img2poem.app/img2poem";
+			};
+			name = Debug;
+		};
+		46BB2C5D2324A24D00B3160C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				INFOPLIST_FILE = img2poemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlr.img2poemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/img2poem.app/img2poem";
+			};
+			name = Release;
+		};
+		46BB2C5F2324A24D00B3160C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				INFOPLIST_FILE = img2poemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlr.img2poemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = img2poem;
+			};
+			name = Debug;
+		};
+		46BB2C602324A24D00B3160C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QQJ6L624P;
+				INFOPLIST_FILE = img2poemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlr.img2poemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = img2poem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46BB2C272324A24C00B3160C /* Build configuration list for PBXProject "img2poem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46BB2C562324A24D00B3160C /* Debug */,
+				46BB2C572324A24D00B3160C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46BB2C582324A24D00B3160C /* Build configuration list for PBXNativeTarget "img2poem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46BB2C592324A24D00B3160C /* Debug */,
+				46BB2C5A2324A24D00B3160C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46BB2C5B2324A24D00B3160C /* Build configuration list for PBXNativeTarget "img2poemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46BB2C5C2324A24D00B3160C /* Debug */,
+				46BB2C5D2324A24D00B3160C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46BB2C5E2324A24D00B3160C /* Build configuration list for PBXNativeTarget "img2poemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46BB2C5F2324A24D00B3160C /* Debug */,
+				46BB2C602324A24D00B3160C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46BB2C242324A24C00B3160C /* Project object */;
+}
